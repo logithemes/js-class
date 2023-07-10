@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js class youtube</title>
+    
+</head>
+    <h3 id="demo">My anme is Logesh </h3>
+        <button onclick="myFunction()"></button>
+<body>
+
+    <script>
+
+    //#10 - JavaScript Variables
+    var n1 = "logesh";
+    var msg = "my ane in " +n1 + " kumar "
+    console.log(msg);
+    var n2 = 5;
+    var n3 = 10;
+    var result = n2 + n3;
+    console.log(result);  
+    //#10 - JavaScript Variables end
+
+    //#12 - JavaScript Datatypes
+    //Two trpes (prmitive data types ) (reference)
+    //prmitive (string number boolean numm undefind)
+    //reference (array objects function)
+    // var  srtring  = "loki"
+    // var number  = 24;
+    //var boolean  = true
+    //var undefind = undefind
+    //var null = nll
+
+    //#14 - JavaScript Objects 
+    var  p1 = {
+        office: "zeta",
+        location: "china",
+        Other:{
+            branch1: "japan",
+            branch2: "....",
+        }
+    };
+    console.log(p1.Other.branch1);
+    //#14 - JavaScript Objects  end
+
+
+    //#15 - JavaScript simple Arrays
+    var a1 = ["inner", "outer", "center"];
+    a1[4] = "middle"
+    console.log(a1);
+    //#15 - JavaScript simple Arrays end 
+
+    //#16 - JavaScript Functions
+    //step1
+    function changes(){
+        var n4 = "loki";
+        var msg1 = "my name is " + n4 + " and ";
+        console.log(msg1);
+    };
+    changes();
+    //step2 parameter
+    function changes(name, age){
+        var msg1 = "my name is " + name + " " + age + " and ";
+        console.log(msg1);
+    };
+    changes("logesh", "25");
+    //#16 - JavaScript Functions end
+
+
+    //#19 - JavaScript Assignment Operators 
+    var as1  = 5;
+    as1 += 2;
+    console.log(as1);
+    //#19 - JavaScript Assignment Operators end  
+
+    //#18 - JavaScript Arithmetic Operators
+    var n6 = 5;
+    var n7 = 7;
+    console.log(n6 + n7);
+    console.log(n6 - n7);
+    console.log(n6 * n7);
+    console.log(n6 / n7);
+    console.log(n6 % n7);
+    //increment
+    console.log(n6++);
+    console.log(n6);
+    //#18 - JavaScript Arithmetic Operators end
+
+
+    //#20 - JavaScript Co mparison Operators -
+    var com = 5;
+    console.log(com > 10);
+    console.log(com < 10);
+    console.log("logesh" < "nivi");
+    //#20 - JavaScript Comparison Operators end
+
+    //#22 - JavaScript Ternary Operator 
+    //if else
+    var child = 18;
+    if(child < 17){
+        console.log("The ride only child");
+    }
+    else{
+        console.log("The ride only adult"); 
+    }
+
+    //Ternary Operator 
+    var type = child < 19 ? "adult": "child";
+    console.log(type);
+
+    //#22 - JavaScript Ternary Operator  end
+
+    //#21 - JavaScript Equality Operators
+
+    console.log(1 === 1);
+    console.log("1" == 1);
+
+    //#21 - JavaScript Equality Operators end
+
+
+    //#26 - JavaScript Operator Precedence -
+    var x = 5 + 2 * 5; //right to left
+    console.log(x);
+    var x = (5 + 2) * 5;//left to right
+    console.log(x);
+    //#26 - JavaScript Operator Precedence - end
+
+    //#27 - JavaScript If-Else (With Examples) 
+    //step1 (string)
+    var weather = "hot";
+    if(weather == "sunny"){
+        console.log("Today weather is mild");
+    }
+    else{
+        console.log("Today weather is sunny");
+    }
+
+    //step2 (comperssion)
+    var anupriya = true;
+    var yuva = false;
+    if(anupriya || yuva){
+        console.log("The best desiner is Anupriya");
+    }
+    else{
+        console.log("The best desiner is Yuva");
+    }
+
+   
+    var time = new Date().getHours();//Dynamic
+    //var time = 13;//static
+ if(time > 0 && time < 10){
+    console.log("gud morining");
+ }
+
+ else if(time > 10 && time < 15){
+    console.log("gud afternoon");
+ }
+ else{
+    console.log("gud evening");
+ }
+    //#27 - JavaScript If-Else (With Examples)  end
+
+
+    //#28 - JavaScript Switch-case (With Examples) 
+    //step1 (get day)
+    let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+console.log(day);
+
+//step2 (get markes)
+var marks =  50;
+
+switch(true){
+    case marks > 50:
+        console.log("50 out of 50");
+        break;
+
+        case marks > 40:
+        console.log("50 out of 40");
+        break;
+        
+}
+    //#28 - JavaScript Switch-case (With Examples) end
+
+
+    //#29 - JavaScript For Loops (With Example) 
+    for(var i = 0;i < 5; i++){
+        if(i % 2 == 0){
+            console.log("The tortal valus is ", i);
+        }
+    }
+    //#29 - JavaScript For Loops (With Example)  end
+
+    //#30 - JavaScript While Loop 
+    var i = 0;
+    while(i < 5){
+        if(i % 2 == 0){
+            console.log("The tortal valus is ", i);
+        }
+        i++;
+    }
+    //#30 - JavaScript While Loop  end
+    
+    /*--------------
+    #31 - JavaScript Do-While Loop 
+    ---------------*/
+
+    //#32 - JavaScript For..in Loop
+    //sterp1 (objects)
+    var fin = {
+        name: "loki",
+        age:  24,
+        sex: "male",
+    };
+
+    for(var key in fin){
+        console.log("key", key);
+    }
+    
+    //step2 array
+    fin1 = ["red", "white", "green"]
+    for(var key in fin1){
+        console.log(fin1[key]);
+    }
+
+    //#32 - JavaScript For..in Loop end
+
+    //#35 - JavaScript Object & OOP(Object Oriented Programming)
+
+    var person = {
+        laptop: "dell",
+        mobile: "redme",
+        interst: ["Iam intrrsting in envato elements"],
+        address: {
+            state: "tamil nade",
+            city: "chennai"
+        },
+
+        join: function(){
+            var msg3 = "My objects " + this.laptop + ", and  " + this.mobile+ " ";
+        console.log(msg3);
+            
+        }
+    }
+
+    console.log(person.join());
+
+    //#35 - JavaScript Object & OOP(Object Oriented Programming) end
+
+
+    //#36 - JavaScript Factory Functions
+
+    function person1(name1){
+       return {
+        name1: name1,
+        all: function(){
+            var msg3 = "my name " + this.name1 + "";
+            console.log(msg3);
+        }
+    }
+
+    }
+
+    var n6 = person1("logesh");//add new variable
+   var n7 = person1("kumar");
+    n6.all();
+    n7.all();
+ 
+    //#36 - JavaScript Factory Functions end
+
+
+    //#38 - JavaScript's Dynamic Nature of Objects
+        var dyn = {
+            hii: "john",
+        }
+        dyn.age = "25";
+        console.log(dyn);
+    //#38 - JavaScript's Dynamic Nature of Objects  end
+
+    //#41 - JavaScript Primitive value types vs reference types 
+        var x1 = 10;
+        var y1 = x1;
+        console.log(y1);
+    //#41 - JavaScript Primitive value types vs reference types  end
+
+    //#41 - JavaScript Primitive value types vs reference types 
+        //primive data types
+         var cart  = 5;
+        function updatecart(cart){cart++;}
+        updatecart(cart);
+        console.log(cart);
+
+        //referencr data type
+        var cart  = {
+            value: 5,
+        };
+        function updatecart(cart){cart.value++;}
+        updatecart(cart);
+        console.log(cart);
+    //#41 - JavaScript Primitive value types vs reference types  end
+
+    //#42 - Enumerating Properties of an Object 
+
+    var user = {
+        Bateam: "Rakesh",
+        Dmteam: "Glyton",
+    }
+
+    for(let key of Object.entries(user)){
+console.log(user);
+    }
+
+    //if else object defind or undefind
+
+    if('Bateam' in user){
+        console.log("yes");
+    }
+
+    //#42 - Enumerating Properties of an Object  end
+
+    //#43 - Cloning an JavaScript Object
+    var user = {
+        Bateam: "Rakesh",
+        Dmteam: "Glyton",
+    }
+
+    var cl = {... user, age: 24}
+    console.log(cl);
+    //#43 - Cloning an JavaScript Object end
+
+    //#45 - JavaScript Math Object 
+    console.log(Math.PI);
+    console.log(Math.ceil(0.3));//convert eql values
+    console.log(Math.floor(500.1)); //get front valus only
+    console.log(Math.trunc(8.7)); //get front valus only
+    console.log(Math.pow(6,2)); //conver in first number * to >> second number
+    console.log(Math.sqrt(64)); // 8 * 8 answer show in output >>8
+    Math.random() * (50 - 45) + 45;
+    console.log(Math.round(0.5)); //get round values 
+
+var min1 = Math.max(30, 50, 60); // get amx and min values
+console.log(min1);
+
+var min2 = [30, 60, 50];
+var min3 = Math.min(...min2);
+console.log(min3);
+    
+    //#45 - JavaScript Math Object  end
+
+    //#46 - JavaScript String Object
+    //lenth
+    var ln = "logesh";
+    var ln1 = ln.length;
+    console.log(ln1);
+    //slice
+    var sl = "logesh, Anupriya"
+    var sl1 = sl.slice(2,3);
+    console.log(sl1);
+
+    //replace
+    function myFunction(){
+    var text = document.getElementById("demo").innerHTML;
+    document.getElementById("demo").innerHTML = text.replace("Logesh", "Dramen Cj")
+    };
+    //replace step2
+    var n7 = "Big smoke";
+    console.log(n7.replace("Big smoke", "sweet"));
+
+    //replace all
+    var replall = "I love gat san adress."
+    replall = replall.replaceAll("adress", "call of dute")
+    console.log(replall);
+    
+    //toUpperCase
+    var text1 = "rider";
+    console.log(text1.toLocaleUpperCase());
+    //concat
+    var text2 = "Big";
+    var text3 = "smoke";
+    var text4 = text2.concat(text3);
+    console.log(text4);
+    
+    //trim
+    var tr = "Black project   ";
+    var tr1 = tr.trimEnd();
+    console.log("First numner" + tr.length + "second number" + tr1.length);
+
+    //padstart
+    var pa = "5";//set to last and firts
+    pa = pa.padStart(5, "*");
+    console.log(pa);
+
+    //padstart
+    const fullNumber = '123456789';
+const last4Digits = fullNumber.slice(-4);
+const maskedNumber = last4Digits.padEnd(fullNumber.length, '*');
+
+console.log(maskedNumber);
+// Expected output: "************5581"
+
+
+//charAt
+
+var ch = "Hellow world";
+console.log(ch.charAt(0));
+
+    //(sub srting && substre) same patten
+ 
+    //splite
+    let text = "How are you doing today?";
+    const sp1 = text.split(" ");
+    var sp2 = sp1.join(" / ")
+    console.log(sp2);
+
+    //#48 - JavaScript Date Object 
+    var check = new Date();
+    console.log(check); 
+
+    //step2
+    var [month, data, year] = new Date().toLocaleDateString("en").split("/");
+    console.log(month, data, year);
+
+    //step3
+    const d = new Date(2018, 11, 24, 10, 33, 30);
+    console.log(d);
+
+    //JavaScript Get Date Methods
+    var f = new Date("2023-07-30");
+    console.log(f.getHours());
+
+    //JavaScript Set Date Methods
+    var nw = new Date();
+    nw.setFullYear("2023");
+    console.log(nw);
+
+    //#48 - JavaScript Date Object end 
+    
+    </script>
+    
+</body>
+</html>
